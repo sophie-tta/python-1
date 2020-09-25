@@ -1,0 +1,98 @@
+Python 3.8.3 (v3.8.3:6f8c8320e9, May 13 2020, 16:29:34) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> name = input("What is your name?")
+What is your name? Alice
+>>> print(name)
+ Alice
+>>> print("Hello" + name)
+Hello Alice
+>>> city = input("What city do you live in?")
+What city do you live in?Birmingham
+>>> print(city)
+Birmingham
+>>> print("Hello " + name + "from " + city)
+Hello  Alicefrom Birmingham
+>>> print("Hello " + name  + "from " + city)
+Hello  Alicefrom Birmingham
+>>> print("Hello " + name + " from " + city)
+Hello  Alice from Birmingham
+>>> product_name = input("What is the product name? ")
+What is the product name? iphone
+>>> product_price = float(input("What is the price? ")
+		      450.50
+		      
+SyntaxError: invalid syntax
+>>> product_price = float(input("What is the price? "))
+What is the price? 450
+>>> print(product_price)
+450.0
+>>> product_quantity = int(input("How many products are there? "))
+How many products are there? 5
+>>> total_price = product_quantity * product_price
+>>> print("Total price: " + total_price)
+Traceback (most recent call last):
+  File "<pyshell#16>", line 1, in <module>
+    print("Total price: " + total_price)
+TypeError: can only concatenate str (not "float") to str
+>>> print(total_price)
+2250.0
+>>> print("Total price: " + total_price)
+Traceback (most recent call last):
+  File "<pyshell#18>", line 1, in <module>
+    print("Total price: " + total_price)
+TypeError: can only concatenate str (not "float") to str
+>>> print("Total price: ") + (total_price)
+Total price: 
+Traceback (most recent call last):
+  File "<pyshell#19>", line 1, in <module>
+    print("Total price: ") + (total_price)
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'float'
+>>> print("Total price: ")(total_price)
+Total price: 
+Traceback (most recent call last):
+  File "<pyshell#20>", line 1, in <module>
+    print("Total price: ")(total_price)
+TypeError: 'NoneType' object is not callable
+>>> print("Total price: ", total_price)
+Total price:  2250.0
+>>> weather = "raining"
+>>> if weather == "raining":
+	print("Take umbrella")
+	else:
+		
+SyntaxError: invalid syntax
+>>> if weather == "raining"
+SyntaxError: invalid syntax
+>>> if weather == "raining":
+	print("Take umbrella")
+	else:
+		
+SyntaxError: invalid syntax
+>>> if weather == "raining":
+	print("Take umbrella")
+	else
+	
+SyntaxError: invalid syntax
+>>> if weather == "raining":
+	print("Take umbrella")
+else
+SyntaxError: invalid syntax
+>>> if weather == "raining":
+	print("Take umbrella")
+
+	
+Take umbrella
+>>> import random
+>>> myName = input("Hello! What is your name?")
+Hello! What is your name?Alice
+>>> number = random.randint(1,10)
+>>> print("Well, " + myName + "I am thinking of a number between 1 and 10")
+Well, AliceI am thinking of a number between 1 and 10
+>>> guess = int(input("Take a guess: "))
+Take a guess: 6
+>>> if guess == number:
+	print("Good job, " + myName + "! You guessed my number")
+
+>>> 
+>>> 
